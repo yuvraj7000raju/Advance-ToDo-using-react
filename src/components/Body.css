@@ -1,0 +1,35 @@
+.b-out{
+    background-color: #E3DEDE;
+    display: flex;
+    justify-content: center;
+}
+.b-in{
+    
+    /* border-top-left-radius: 20px;
+    border-top-right-radius: 20px; */
+    margin: 5vh;
+    
+}
+.upper{
+    /* max-width: 00px; */
+    background-color: #AE7E7E;
+    padding: 5vh;
+    box-sizing: border-box;
+    width:90vw;
+    display: flex;
+    justify-content: space-around;
+    max-height: 250px;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.lower{
+    width:90vw;
+    background-color: #AE7E7E;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    margin-top: 5vh;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}

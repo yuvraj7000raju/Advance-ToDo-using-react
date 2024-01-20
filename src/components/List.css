@@ -1,0 +1,11 @@
+.list-container{
+    margin: 0.5rem;
+    background-color: #AE7E7E;
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: white;
+    border-radius: 10px;
+}
+.list-task{
+    font-size: 1rem;
+}

@@ -1,0 +1,24 @@
+button{
+    background-color: #CB5454;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+}
+button:hover{
+    background-color: rgb(196, 129, 91);
+}
+svg{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+path{
+    /* fill: white; */
+}
+.b-name{
+    padding-left: 0.3rem;
+}

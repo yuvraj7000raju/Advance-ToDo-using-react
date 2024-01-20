@@ -1,0 +1,6 @@
+.list-box{
+    background-color: #E3DEDE;
+    height: 100%;
+    overflow-y: scroll;
+    max-height: 30vw;
+}

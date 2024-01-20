@@ -1,0 +1,55 @@
+
+.main-container{
+    max-width: 500px;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 20px;
+
+
+}
+.button-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #CB5454;;
+    color: white;
+    padding: 0.4rem;
+    font-size: 1rem;
+}
+
+
+.input-container{
+    background-color: #E3DEDE;
+
+}
+
+.form{
+    display: flex;
+    flex-direction: column;     
+}
+#task{
+    max-height: 100px;
+    height: 4rem;
+    margin: 0rem 1rem;
+    box-sizing: border-box;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background-color: #E3DEDE;
+    padding: 0.5rem;
+    outline: none;
+    resize: none;
+}
+#description{
+    max-height: 300px;
+    height: 8rem;
+    border: none;
+    margin: 0rem 1rem;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    background-color: #E3DEDE;
+    outline: none;
+    resize: none;
+}
