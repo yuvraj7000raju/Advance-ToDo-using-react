@@ -1,11 +1,21 @@
 import './Button.css';
-export default function Button({svg,children,cTask,id}){
+export default function Button({svg,children,cTask,id,onclick,paylod}){
 
 function handelclick(){
-    console.log("hello")
+
+   console.log(paylod)
+
+   onclick({type : children, paylod : paylod})
     let bb=document.getElementById(id);
-    console.log(bb)
+    // if (status){
+
     bb.setAttribute("fill",cTask);
+    // change();
+    // }
+    // else{
+    //     bb.setAttribute("fill","white");
+    // }
+    // change();
 }
 
 return(

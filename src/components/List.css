@@ -5,7 +5,16 @@
     font-size: 1rem;
     color: white;
     border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .list-task{
     font-size: 1rem;
+}
+.completed{
+    max-width: 2rem;
+    max-height: 1rem;
+    display: flex;
+    align-items: center;
 }
