@@ -4,15 +4,10 @@ import './TaskList.css';
 import Button from './Button';
 import context_list from './context';
 import { useContext, useState } from 'react';
-export default function TaskList({data,edit,val ,valup}){
-const[task, setTask] =useState(null);
+export default function TaskList({data,edit,task,setTask}){
   let bb = useContext(context_list)
- function kkk(){
-    valup(task)
-    console.log(val)
- }
    return(
-    <context_list.Provider value ={task}>
+
     <div className="main-container">
     <div className="button-container">
     <div className="highlight"> 
@@ -21,7 +16,7 @@ const[task, setTask] =useState(null);
     </div>
     <div className="add">
     <Button 
-    svg={edt} cTask={"blue"} id={"edit"} onclick={edit} paylod ={kkk}>edit</Button>
+    svg={edt} cTask={"blue"} id={"edit"} onclick={edit} paylod ={task}>edit</Button>
     </div>
     </div>
     <div className="list-box">
@@ -40,7 +35,7 @@ const[task, setTask] =useState(null);
         <List></List> */}
     </div>
 </div>
-</context_list.Provider>
+
    )
 
 }
