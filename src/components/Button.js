@@ -10,8 +10,12 @@ function handelclick(){
     // if (status){
 
     bb.setAttribute("fill",cTask);
-    // change();
-    // }
+
+    setTimeout(()=>{
+      bb.setAttribute("fill","black")
+    },500)
+   //  change();
+   //  }
     // else{
     //     bb.setAttribute("fill","white");
     // }

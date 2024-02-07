@@ -12,6 +12,9 @@ export default function Body() {
     function listReducer(list, action) {
         switch (action.type) {
             case 'add':
+                if(action.paylod[0].task === null){
+                    return list
+                }
                 action.paylod[1]();
                 return [...list, action.paylod[0]]
 

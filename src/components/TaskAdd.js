@@ -7,13 +7,16 @@ import context_list from './context';
 
 
 export default function TaskAdd({data , edit, val, setTask}){
-  // const [a , aa] =useState({})
+
   let a =useRef({})
   let h = 2;
+  
 const tsk = useContext(context_list);
 let m = {highlight : false,
 complete : false,
-id : data.length+1};
+id : data.length+1,
+task : null,
+description: null};
 
 // if(val){
 
@@ -65,6 +68,14 @@ useEffect(()=>{
 },[val])
 if(val){
   a.current = m;
+  document.querySelector("#task").focus();
+  if(m.task === null){
+    a.current.task = t[0].task;
+    a.current.description = t[0].description;
+
+  }
+
+ 
 }
 function clearf (){
   setTask(null)
@@ -77,7 +88,7 @@ function clearf (){
         <div className="main-container">
             <div className="button-container">
             <div className="highlight"> 
-<Button svg = {highlight} cTask ={"green"} id={"ii"} onclick={edit} paylod={()=>highlightChange()}>highlight</Button>
+<Button svg = {highlight} cTask ={"yellow"} id={"ii"} onclick={edit} paylod={()=>highlightChange()}>highlight</Button>
            </div>
            {val ?  <div className="add"><Button svg = {add} cTask ={"red"} id ={"add"} onclick={edit} paylod={[a.current,clearf]}>done</Button></div> :
             <div className="add"><Button svg = {add} cTask ={"red"} id ={"add"} onclick={edit} paylod={[m,clearf]}>add</Button></div>}

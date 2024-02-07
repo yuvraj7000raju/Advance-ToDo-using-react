@@ -20,8 +20,9 @@ export default function TaskList({data,edit,task,setTask}){
     </div>
     </div>
     <div className="list-box">
-        {data.map((task)=>{
+        {data.map((task , index)=>{
             console.log(task.task)
+            task.id = index +1;
            return <List key={task.id} onclick={setTask}>{task}</List>
         })}
         {/* <List></List>
