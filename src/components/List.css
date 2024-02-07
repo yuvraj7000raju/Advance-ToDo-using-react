@@ -2,15 +2,24 @@
     margin: 0.5rem;
     background-color: #AE7E7E;
     padding: 0.5rem;
+    padding-left: 0.7rem;
     font-size: 1rem;
     color: white;
     border-radius: 10px;
+    border: 1px solid grey;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: all 0.1s ease-in-out;
+    overflow: hidden;
+}
+.list-container:hover{
+    padding-left: 1.5rem;
 }
 .list-task{
     font-size: 1rem;
+    max-width: 80%;
+    overflow: hidden;
 }
 .completed{
     max-width: 2rem;

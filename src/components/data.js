@@ -1,4 +1,6 @@
-let data = [
+let d = localStorage.getItem("data")
+let data = JSON.parse(d)
+let ch = [
     {
         id : 1,
         task : "this is demo task 1.",
@@ -14,5 +16,9 @@ let data = [
         complete : true
     }
 ]
+
+if(data == null){
+    data = ch
+}
 
 export default data;

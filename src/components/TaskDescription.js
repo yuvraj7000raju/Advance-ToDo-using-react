@@ -13,7 +13,7 @@ let gg= useContext(context_list);
 console.log(gg ,"---")
 let ch = {
    task : " not selected!",
-   description : "not !"
+   description : " no description available !"
 
 }
 // useEffect(()=>{
@@ -42,14 +42,25 @@ if(gg){
 
 console.log(ch," --- erf")
 
+function savelocalstorage() {
+   localStorage.setItem("data", JSON.stringify(list));
+   console.log("local-storage saved")
+}
+// useEffect(()=>{
+//    localStorage.setItem("data", JSON.stringify(list));
+// })
+
 return(
      <div className="description-container">
         <div className="d-up">
             <div className="d-task">
-               {ch.task}
+              Task -   {ch.task}
             </div>
             <div className="d-complete">
                <Button svg={complete} cTask={"orange"} id={"complete"} onclick={onclick} paylod={gg}>complete</Button>
+            </div>
+            <div className="save">
+            <button type="button" onClick={savelocalstorage}>save</button>
             </div>
         </div>
         <div className="d-data">

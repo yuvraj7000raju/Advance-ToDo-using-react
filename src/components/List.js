@@ -9,7 +9,7 @@ export default function List({children,onclick}){
   const[task,setTask] = useState(null)
    useEffect(()=>{
       if(children.highlight === true){
-       document.getElementById(`${children.id}`).style.backgroundColor = "yellow";
+       document.getElementById(`${children.id}`).style.backgroundColor = "#e3e322";
       }
       else{
          document.getElementById(`${children.id}`).style.backgroundColor = "#AE7E7E";
@@ -50,7 +50,8 @@ export default function List({children,onclick}){
 return(
   
      <div className="list-container" id={children.id} onClick={handelClick}>
-        <span className="list-task">{children.task}</span>
+        <span className="list-task">
+         {children.id}.   {children.task}</span>
         <span className="completed">{children.complete && completeSmall}</span>
 
      </div>

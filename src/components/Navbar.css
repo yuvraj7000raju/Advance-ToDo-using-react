@@ -18,3 +18,9 @@ nav{
 .calender{
     font-size: 150%;
 }
+.calenders{
+    height: 2rem;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #CB5454;
+}
